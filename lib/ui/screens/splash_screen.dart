@@ -2,9 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_design/app/assets_path.dart';
-import 'package:flutter_ui_design/ui/screens/sign_in_screen.dart';
-
 import '../../utils/color.dart';
+import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -18,19 +17,23 @@ class _SplashScreenState extends State<SplashScreen> {
 Future<void>_moveToNextScreen() async{
   await Future.delayed(Duration(seconds: 5));
   if(mounted){
-  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>SignInScreen()));}
+  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()));}
 }
 
    @ override
    void initState(){
      super.initState();
+    // print("I am init state");
      _moveToNextScreen();
-     /*Timer(Duration(seconds: 5,),(){
-       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>SignInScreen()));
+    /*Timer(Duration(seconds: 5,),(){
+      print('I am timer');
+      // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>SignInScreen()));
      });*/
    }
+
   @override
   Widget build(BuildContext context) {
+  //print("I am build");
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
@@ -58,7 +61,7 @@ Future<void>_moveToNextScreen() async{
         /*child:Center(child: Image(image: AssetImage("assets/images/paper-airplane.png",),)),*/
     child: Center( child:
     Image.asset(AssetsPath.appLogoPng,
-    height: 250,width: 250,),
+    height: 150,width: 150,),
       ),
       ),
 

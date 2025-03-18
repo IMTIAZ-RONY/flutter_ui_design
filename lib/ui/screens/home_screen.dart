@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_design/ui/screens/home/tabs/calls_tab.dart';
+import '../../chat_map.dart';
 import '../../utils/color.dart';
 import '../../utils/config.dart';
 import 'home/tabs/chats_tab.dart';
@@ -16,6 +17,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    int _totalUnreadChats = chatUsers.where((user) => (user['unread_count'] as int) > 0).length;
     return DefaultTabController(
       initialIndex: 1,
       length: 4,
@@ -60,7 +62,29 @@ class _HomeScreenState extends State<HomeScreen> {
             indicatorSize: TabBarIndicatorSize.tab,
             tabs: [
               Tab(icon: Icon(Icons.groups, size: 25)),
-              Tab(text: "Chats"),
+              Tab(
+                child:Row(
+                children: [
+                  const Text("Chats"),
+                  if (_totalUnreadChats > 0)
+                    Container(
+                      margin: const EdgeInsets.only(left: 4),
+                      padding: const EdgeInsets.all(4),
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                      ),
+                      child: Text(
+                        _totalUnreadChats.toString(),
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
+
+                ]
+              ) ,),
               Tab(text: "Updates"),
               Tab(text: "Calls"),
             ],

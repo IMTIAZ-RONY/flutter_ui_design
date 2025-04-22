@@ -1,3 +1,3 @@
 class AppConfig{
-  static const String appName="WhatsApp";
-}
+ static final String appName="WhatsApp";
+}///

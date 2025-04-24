@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   email_validator: ^3.0.0
   font_awesome_flutter: ^10.8.0
+  unicode_emojis: ^0.4.0
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import '../ui/screens/splash_screen.dart';
-import '../utils/color.dart';
+import 'package:flutter_ui_design/ui/screens/ui/home/home_screen.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -17,7 +16,7 @@ class _MyAppState extends State<MyApp> {
       theme:ThemeData(
 
       ) ,
-      home:SplashScreen() ,
+      home:HomeScreen() ,
     );
   }
 }

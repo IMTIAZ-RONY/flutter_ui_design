@@ -9,4 +9,4 @@ class AssetsPath{
   static const String fitnessWatch="$_imagePath/fitnessWatch.png";
   static const String normalWatch="$_imagePath/normalWatch.png";
   static const String casioWatch="$_imagePath/casioWatch.png";
-}
+}    ///

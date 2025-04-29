@@ -67,7 +67,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                 Row(
                   children: List.generate(
                     5,
-                    (index) =>
+                        (index) =>
                         Icon(Icons.star, color: Colors.amberAccent, size: 20),
                   ),
                 ),

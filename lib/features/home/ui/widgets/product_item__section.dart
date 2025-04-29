@@ -1,8 +1,7 @@
-
 import 'package:flutter/material.dart';
-
 import '../../../../../app/assets_path.dart';
-import '../../product_details/product_details_screen/product_details_screen.dart';
+import '../../../producuct/ui/screen/product_details_screen.dart';
+
 
 
 

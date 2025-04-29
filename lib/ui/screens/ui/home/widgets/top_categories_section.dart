@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
-import '../../../../app/assets_path.dart';
+import '../../../../../app/assets_path.dart';
 
 class TopCategoriesSection extends StatefulWidget {
   const TopCategoriesSection({

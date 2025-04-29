@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/ui/screens/ui/home/home_screen.dart';
+import '../ui/screens/ui/home/home_screen/home_screen.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});

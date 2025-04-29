@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/ui/screens/ui/widgets/product_item__section.dart';
 import 'dart:ui';
 import 'package:unicode_emojis/unicode_emojis.dart';
 import '../widgets/app_bar_icon_button.dart';
-import '../widgets/home_header_section.dart';
 import '../widgets/home_carousel_slider_section.dart';
+import '../widgets/home_header_section.dart';
+import '../widgets/product_item__section.dart';
 import '../widgets/top_categories_section.dart';
 
 class HomeScreen extends StatefulWidget {
